@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users - SuperCMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Users</h1>
+    <a href="{{ url_for('index') }}">Back to Posts</a> | <a href="{{ url_for('logout') }}">Logout</a>
+    <ul class="list-group mt-4">
+    {% for user in users %}
+        <li class="list-group-item">{{ user[1] }}</li>
+    {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

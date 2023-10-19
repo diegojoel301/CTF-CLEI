@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /4qu1_3st4_l4_b4nd3r4

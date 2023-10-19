@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Posts - SuperCMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>My Posts</h1>
+    <a href="{{ url_for('new_post') }}">New Post</a> | <a href="{{ url_for('logout') }}">Logout</a>
+    {% for post in posts %}
+    <div class="card mt-4">
+        <div class="card-header">{{ post[0] }}</div>
+        <div class="card-body">{{ post[1] }}</div>
+    </div>
+    {% endfor %}
+    <a href="{{ url_for('index') }}">Back to All Posts</a>
+</div>
+</body>
+</html>

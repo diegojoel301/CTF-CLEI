@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SuperCMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>SuperCMS</h1>
+    {% if 'user_id' in session %}
+    <a href="{{ url_for('new_post') }}">New Post</a> | <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+    <a href="{{ url_for('login') }}">Login</a>
+    {% endif %}
+    {% for post in posts %}
+    <div class="card mt-4">
+        <div class="card-header">{{ post[0] }} (by {{ post[2] }})</div>
+        <div class="card-body">{{ post[1] }}</div>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
