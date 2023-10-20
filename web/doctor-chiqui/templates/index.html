@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Médico</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Formulario Médico</h2>
+        <div class="card">
+            <div class="card-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Fecha de Nacimiento:</label>
+                        <input type="date" name="birthdate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Medicamentos:</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="medications" value="Medicamento A" id="medA">
+                            <label class="form-check-label" for="medA">Medicamento A</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="medications" value="Medicamento B" id="medB">
+                            <label class="form-check-label" for="medB">Medicamento B</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="medications" value="Medicamento C" id="medC">
+                            <label class="form-check-label" for="medC">Medicamento C</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="medications" value="Medicamento D" id="medD">
+                            <label class="form-check-label" for="medD">Medicamento D</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="medications" value="Medicamento E" id="medE">
+                            <label class="form-check-label" for="medE">Medicamento E</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
