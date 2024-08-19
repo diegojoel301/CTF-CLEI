@@ -1,2 +1,2 @@
 # CTF-CLEI
-Repo Oficial de los retos del CTF CLEI 2023
+Repo Oficial de los retos del CTF CLEI (Conferencia Latinoamericana) 2023 
